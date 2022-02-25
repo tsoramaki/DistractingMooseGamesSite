@@ -1,0 +1,145 @@
+:root
+{
+  --font-sans: "Inter", Helvetica, sans-serif;
+  --font-size: 18px;
+  --color-green: #27ae60;
+  --color-yellow: #ffda00;
+  --color-dark: #333;
+  --color-light: #8d8d8d;
+  --transition-dur: 0.3s;
+}
+
+body
+{
+  font-family: var(--font-sans);
+  font-size: var(--font-size);
+  line-height: 1.5;
+}
+
+p
+{
+  color: #000;
+  font-weight: 400;
+}
+
+em
+{
+  color: #828282;
+  font-weight: 500;
+}
+
+a:hover
+{
+  color: var(--color-green);
+}
+
+h1, h2, h3
+{
+  font-weight: 800;
+}
+
+h1
+{
+  color: var(--color-light);
+  font-size: 3.5rem;
+}
+
+h2
+{
+  color: var(--color-dark);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  transition: var(--transition-dur);
+}
+
+h3
+{
+  color: var(--color-dark);
+  font-size: 2rem;
+  margin-bottom: 0.9rem;
+}
+
+h4
+{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* Top navigation */
+#top-navigation
+{
+  position: absolute;
+  width: 100%;
+}
+.main-menu .navigation
+{
+  position: static;
+  margin: 0;
+}
+.main-menu .navigation > li
+{
+  position: relative;
+  float: left;
+  margin-right: 35px;
+  padding: 35px 0 15px;
+  transition: all ease 500ms;
+  -moz-transition: all ease 500ms;
+  -webkit-transition: all ease 500ms;
+  -ms-transition: all ease 500ms;
+  -o-transition: all ease 500ms;
+}
+
+.main-menu .navigation li a
+{
+  font-weight: 600;
+}
+
+.main-menu .navigation > li:last-child
+{
+  margin-right: 0;
+}
+
+.main-menu .navigation > li:hover > a,
+.main-menu .navigation > li.current > a
+{
+  opacity: 1;
+  color: var(--color-yellow);
+}
+
+.main-menu .navigation > li > a
+{
+  position: relative;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  line-height: 30px;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  opacity: 1;
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 16px;
+  transition: all ease 500ms;
+  -moz-transition: all ease 500ms;
+  -webkit-transition: all ease 500ms;
+  -ms-transition: all ease 500ms;
+  -o-transition: all ease 500ms;
+}
+
+.main-menu .navigation > li:hover > a::after,
+.main-menu .navigation > li.current > a::after
+{
+  width: 22px;
+}
+
+/* Title Banner Section */
+.title-banner
+{
+  padding: 120px 0;
+  background: linear-gradient(100deg, #1a3036 0%, #055160 100%);
+}
+
+.title-banner .sub-Title
+{
+  color: #f2c94c;
+}
