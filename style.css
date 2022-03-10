@@ -4,6 +4,7 @@
   --font-size: 18px;
   --color-green: #27ae60;
   --color-yellow: #ffda00;
+  --color-red: #ef1f22;
   --color-dark: #333;
   --color-light: #8d8d8d;
   --transition-dur: 0.3s;
@@ -330,6 +331,50 @@ h4
   -o-transition: all var(--transition-dur) ease;
 }
 
+.main-menu > ul li.menu-item-has-children .dropdown-btn
+{
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #ffffff;
+  line-height: 28px;
+  border: 1px solid #ffffff;
+  background-size: 20px;
+  cursor: pointer;
+  z-index: 5;
+  display: none;
+}
+
+.main-menu > ul li.menu-item-has-children .dropdown-btn i.flaticon-arrow-down-sign-to-navigate::before
+{
+  font-size: 100px;
+}
+
+.navbar-open
+{
+  position: relative;
+  display: none;
+  background-color: unset;
+  padding: 0;
+  border: none;
+  position: absolute;
+  right: 32px;
+  top: 0px;
+}
+
+.navbar-open .flaticon
+{
+  color: #fff;
+  display: block;
+  font-size: 30px;
+  line-height: 40px;
+  cursor: pointer;
+  padding: 18px 0px;
+}
+
 .mobile-menu
 {
   position: fixed;
@@ -406,6 +451,148 @@ h4
   transform: translateX(101%);
   -webkit-transform: translateX(101%);
   -ms-transform: translateX(101%);
+}
+
+.mobile-menu-visible .mobile-menu .menu-box
+{
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.7s ease;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+.mobile-menu .close-btn
+{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  line-height: 30px;
+  width: 30px;
+  text-align: center;
+  font-size: 26px;
+  color: var(--color-dark);
+  cursor: pointer;
+  z-index: 10;
+  -webkit-transition: all var(--transition-dur) ease;
+  -moz-transition: all var(--transition-dur) ease;
+  -ms-transition: all var(--transition-dur) ease;
+  -o-transition: all var(--transition-dur) ease;
+  transition: all var(--transition-dur) ease;
+  -webkit-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  transform: translateY(-50px);
+}
+
+.mobile-menu-visible .mobile-menu .close-btn
+{
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.mobile-menu .close-btn:hover
+{
+  opacity: 0.5;
+}
+
+.mobile-menu .navigation
+{
+  position: relative;
+  padding-top: 50px;
+  display: block;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu .navigation li
+{
+  position: relative;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu .navigation li > ul > li:last-child
+{
+  border-bottom: none;
+}
+
+.mobile-menu .navigation li > ul > li:first-child
+{
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu .navigation li > a
+{
+  position: relative;
+  display: block;
+  line-height: 24px;
+  padding: 10px 20px;
+  font-size: 15px;
+  color: var(--color-dark);
+  text-transform: capitalize;
+  transition: all var(--transition-dur) ease;
+  -webkit-transition: all var(--transition-dur) ease;
+  -moz-transition: all var(--transition-dur) ease;
+  -ms-transition: all var(--transition-dur) ease;
+  -o-transition: all var(--transition-dur) ease;
+}
+
+.mobile-menu .navigation li.current > a,
+.mobile-menu .navigation li > a:hover
+{
+  color: var(--color-red);
+}
+
+.mobile-menu .navigation li.menu-item-has-children .dropdown-btn
+{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--color-dark);
+  cursor: pointer;
+  z-index: 5;
+}
+
+.mobile-menu .navigation li.menu-item-has-children .dropdown-btn:after
+{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 1px;
+  height: 24px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu .navigation li > ul,
+.mobile-menu .navigation li > ul > li > ul
+{
+  display: none;
+}
+
+@media only screen and (max-width: 768px)
+{
+  #top-navigation .top-menu
+  {
+    display: none; !important;
+    visibility: hidden;
+  }
+  .navbar-open
+  {
+    opacity: 1;
+    visibility: visible;
+    display: inline-block;
+  }
+  
 }
 
 /* Title Banner Section */
