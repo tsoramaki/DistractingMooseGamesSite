@@ -5,11 +5,13 @@
   --color-green: #27ae60;
   --color-yellow: #ffda00;
   --color-red: #ef1f22;
+  --color-pink: #f50057;
   --color-dark: #333;
   --color-light: #8d8d8d;
   --transition-dur: 0.3s;
 }
 
+/* Text stylez */
 body
 {
   font-family: var(--font-sans);
@@ -64,6 +66,61 @@ h4
 {
   font-size: 1.2rem;
   font-weight: 700;
+}
+
+/* Button Styles */
+
+.btn
+{
+  padding: 20px 30px;
+  display: inline-block;
+  border: none;
+  transition: var(--transition-dur);
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.btn:hover
+{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn.btn-primary
+{
+  color: #111;
+  background-color: var(--color-yellow);
+  padding: 20px 50px;
+}
+
+.btn.btn-secondary
+{
+  color: #fff;
+  background-color: rgba(55,55,55, 0.1);
+}
+
+.btn.btn-invert
+{
+  color: #fff;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn.btn-invert:hover
+{
+  box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Forms */
+
+input[type="text"]
+{
+  font-size: 1rem;
+  padding: 8px 5px;
+  border-radius: 5px;
 }
 
 /* Top navigation */
@@ -592,7 +649,7 @@ h4
     visibility: visible;
     display: inline-block;
   }
-  
+
 }
 
 /* Title Banner Section */
@@ -605,4 +662,83 @@ h4
 .title-banner .sub-Title
 {
   color: #f2c94c;
+}
+
+/* Subscribe Bar */
+.subscribe-bar
+{
+  background-color: #111;
+  padding: 30px 0 10px;
+}
+
+.subscribe-bar p
+{
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.subscribe-bar input,
+.subscribe-bar .btn
+{
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* Content Section */
+
+.content-area
+{
+  padding: 100px 0;
+}
+
+/* Post List */
+
+article.post
+{
+  margin: 50px 0;
+}
+
+.post .meta
+{
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-pink);
+  margin-bottom: 8px;
+}
+
+.blog .post h2 a
+{
+  font-size: 3rem;
+  color: #111;
+}
+
+.blog .post h2 a:hover
+{
+  color: var(--color-green);
+}
+
+.blog .post p
+{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #828282;
+  line-height: 1.5;
+}
+
+.blog .post .read-more
+{
+  color: var(--color-pink);
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 12px;
+  transition: var(--transition-dur);
+}
+
+.blog .post a.read-more:hover
+{
+  color: var(--color-green);
+  padding-left: 5px;
 }
