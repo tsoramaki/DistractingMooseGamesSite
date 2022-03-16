@@ -89,8 +89,8 @@ h4
 
 .btn.btn-primary
 {
-  color: #111;
-  background-color: var(--color-yellow);
+  color: #fff;
+  background-color: var(--color-dark);
   padding: 20px 50px;
 }
 
@@ -741,4 +741,48 @@ article.post
 {
   color: var(--color-green);
   padding-left: 5px;
+}
+
+/* Footer Area */
+
+.footer-calltoaction
+{
+  padding: 100px 0;
+  background: linear-gradient(100deg, #1a3036 0%, #055160 100%);
+}
+
+.footer-calltoaction .sub-title
+{
+  color: var(--color-light);
+}
+
+.footer-calltoaction h2
+{
+  color: #f2f2f2;
+  margin-bottom: 1rem;
+}
+
+.footer-calltoaction p
+{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.footer-calltoaction .btn
+{
+  margin-top: 2rem;
+}
+
+.copyright
+{
+  padding: 50px 0;
+}
+
+.copyright p
+{
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 0;
+  font-weight: 500;
 }
