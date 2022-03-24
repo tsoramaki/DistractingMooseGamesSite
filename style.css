@@ -68,6 +68,11 @@ h4
   font-weight: 700;
 }
 
+.spacer
+{
+  margin: 75px 0;
+}
+
 /* Button Styles */
 
 .btn
@@ -785,4 +790,90 @@ article.post
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 0;
   font-weight: 500;
+}
+
+
+/* Elementor Widgets Styles */
+
+.title-wrapper .sub-title
+{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--color-pink);
+}
+
+.sub-title
+{
+  margin: 0;
+}
+
+.text-card
+{
+  position: relative;
+  overflow: hidden;
+  min-height: 335px;
+  padding: 35px 30px 100px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.15);
+}
+
+.text-card h4,
+.text-card p
+{
+  color: #fff;
+}
+
+.text-card p
+{
+  font-size: 0.9rem;
+}
+
+.text-card .overlay
+{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(130deg, #f2994a 0%, #eb5757 100%);
+}
+
+.text-card.style-1 .overlay
+{
+  background: linear-gradient(130deg, #f2994a 0%, #eb5757 100%);
+}
+
+.text-card.style-2 .overlay
+{
+  background: linear-gradient(130deg, #56ccf2 0%, #2f80ed 100%);
+}
+
+.text-card.style-3 .overlay
+{
+  background: linear-gradient(130deg, #6fc987 0%, #289683 100%);
+}
+
+.text-card .overlay-image img
+{
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+.text-card .overlay-image
+{
+  position: absolute;
+  transform: rotate(-15deg);
+  border-radius: 20px;
+  overflow: hidden;
+  width: 65%;
+  right: -15%;
+  bottom: -15%;
+  transition: var(--transition-dur);
+}
+
+.text-card:hover .overlay-image
+{
+  transform: rotate(-18deg);
 }
