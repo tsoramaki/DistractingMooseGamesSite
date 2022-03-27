@@ -6,8 +6,9 @@
   --color-yellow: #ffda00;
   --color-red: #ef1f22;
   --color-pink: #f50057;
-  --color-dark: #333;
+  --color-dark: #282828;
   --color-light: #8d8d8d;
+  --color-lightblue: #8abaff;
   --transition-dur: 0.3s;
 }
 
@@ -21,7 +22,7 @@ body
 
 p
 {
-  color: #000;
+  color: var(--color-lightblue);
   font-weight: 400;
 }
 
@@ -44,7 +45,7 @@ h1, h2, h3
 h1
 {
   color: var(--color-light);
-  font-size: 3.5rem;
+  font-size: 3.2rem;
 }
 
 h2
@@ -57,7 +58,7 @@ h2
 
 h3
 {
-  color: var(--color-dark);
+  color: #adb5bd;
   font-size: 2rem;
   margin-bottom: 0.9rem;
 }
@@ -87,6 +88,7 @@ h4
 
 .btn:hover
 {
+  background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
@@ -95,7 +97,7 @@ h4
 .btn.btn-primary
 {
   color: #fff;
-  background-color: var(--color-dark);
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 20px 50px;
 }
 
@@ -114,9 +116,10 @@ h4
 
 .btn.btn-invert:hover
 {
-  box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.3);
-  -webkit-box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.3);
-  -moz-box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Forms */
@@ -263,7 +266,7 @@ input[type="text"]
 
 .main-menu .navigation > li > ul > li:hover > a
 {
-  color: var(--color-yellow);
+  color: var(--color-green);
   padding-left: 10px;
 }
 
@@ -347,7 +350,7 @@ input[type="text"]
 
 .main-menu .navigation > li > ul > li > ul > li:hover > a
 {
-  color: var(--color-yellow);
+  color: var(--color-green);
   padding-left: 20px;
 }
 
@@ -661,7 +664,7 @@ input[type="text"]
 .title-banner
 {
   padding: 120px 0;
-  background: linear-gradient(100deg, #1a3036 0%, #055160 100%);
+  background: linear-gradient(180deg, #004a5c 0%, #111111 100%);
 }
 
 .title-banner .sub-Title
@@ -695,6 +698,7 @@ input[type="text"]
 .content-area
 {
   padding: 100px 0;
+  background-color: var(--color-dark);
 }
 
 /* Post List */
@@ -709,14 +713,14 @@ article.post
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
-  color: var(--color-pink);
+  color: var(--color-lightblue);
   margin-bottom: 8px;
 }
 
 .blog .post h2 a
 {
   font-size: 3rem;
-  color: #111;
+  color: #adb5bd;
 }
 
 .blog .post h2 a:hover
@@ -734,7 +738,7 @@ article.post
 
 .blog .post .read-more
 {
-  color: var(--color-pink);
+  color: var(--color-lightblue);
   font-size: 1.2rem;
   font-weight: 500;
   display: inline-block;
@@ -753,7 +757,7 @@ article.post
 .footer-calltoaction
 {
   padding: 100px 0;
-  background: linear-gradient(100deg, #1a3036 0%, #055160 100%);
+  background: linear-gradient(360deg, #000000 0%, #282828 100%);
 }
 
 .footer-calltoaction .sub-title
@@ -787,7 +791,7 @@ article.post
 
 .copyright p
 {
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--color-light);
   margin-bottom: 0;
   font-weight: 500;
 }
