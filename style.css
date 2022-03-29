@@ -9,6 +9,7 @@
   --color-dark: #282828;
   --color-light: #8d8d8d;
   --color-lightblue: #8abaff;
+  --color-darkblue: #033a8d;
   --transition-dur: 0.3s;
 }
 
@@ -22,7 +23,7 @@ body
 
 p
 {
-  color: var(--color-lightblue);
+  color: black;
   font-weight: 400;
 }
 
@@ -58,7 +59,7 @@ h2
 
 h3
 {
-  color: #adb5bd;
+  color: var(--color-dark);
   font-size: 2rem;
   margin-bottom: 0.9rem;
 }
@@ -698,7 +699,6 @@ input[type="text"]
 .content-area
 {
   padding: 100px 0;
-  background-color: var(--color-dark);
 }
 
 /* Post List */
@@ -713,14 +713,14 @@ article.post
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
-  color: var(--color-lightblue);
+  color: var(--color-darkblue);
   margin-bottom: 8px;
 }
 
 .blog .post h2 a
 {
   font-size: 3rem;
-  color: #adb5bd;
+  color: var(--color-dark);
 }
 
 .blog .post h2 a:hover
@@ -732,13 +732,13 @@ article.post
 {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #828282;
+  color: var(--color-dark);
   line-height: 1.5;
 }
 
 .blog .post .read-more
 {
-  color: var(--color-lightblue);
+  color: var(--color-darkblue);
   font-size: 1.2rem;
   font-weight: 500;
   display: inline-block;
@@ -880,4 +880,75 @@ article.post
 .text-card:hover .overlay-image
 {
   transform: rotate(-18deg);
+}
+
+.section-call-to-action
+{
+  position: relative;
+  text-align: center;
+  border-radius: 4px;
+  padding: 90px 100px;
+  margin: 20px 0;
+}
+
+.section-call-to-action .underlay-bg
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  border-radius: 40px;
+  background-color: #f2f2f2;
+}
+
+.section-call-to-action .overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 40px;
+  overflow: hidden;
+  background: linear-gradient(100deg, #f50057 0%, #bb6bd9 100%);
+  transform: rotate(358deg);
+}
+
+.section-call-to-action .overlay-image img
+{
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+.section-call-to-action .overlay-image
+{
+  position: absolute;
+  transform: rotate(18deg);
+  border-radius: 20px;
+  overflow: hidden;
+  width: 30%;
+  left: -4%;
+  bottom: -50%;
+  transition: var(--transition-dur);
+}
+
+.section-call-to-action:hover .overlay-image
+{
+  transform: rotate(21deg);
+}
+
+.section-call-to-action h2,
+.section-call-to-action .sub-title,
+.section-call-to-action p
+{
+  color: white;
+}
+
+.section-call-to-action .sub-title
+{
+  color: var(--color-yellow);
 }
