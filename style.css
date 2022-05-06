@@ -1,6 +1,8 @@
 :root
 {
   --font-sans: "Inter", Helvetica, sans-serif;
+  --font-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source
+                Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   --font-size: 18px;
   --color-green: #27ae60;
   --color-yellow: #ffda00;
@@ -68,6 +70,28 @@ h4
 {
   font-size: 1.2rem;
   font-weight: 700;
+}
+
+.testimonal
+{
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.testimonal cite
+{
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+cite span
+{
+  color: #828282;
 }
 
 .spacer
