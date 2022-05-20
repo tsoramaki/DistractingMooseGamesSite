@@ -701,7 +701,7 @@ input[type="text"]
 .subscribe-bar
 {
   background-color: #111;
-  padding: 30px 0 10px;
+  padding: 30px 0;
 }
 
 .subscribe-bar p
@@ -710,12 +710,32 @@ input[type="text"]
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 576px)
+{
+  .subscribe-bar p
+  {
+    margin-bottom: 20px;
+  }
+}
+
 .subscribe-bar input,
 .subscribe-bar .btn
 {
   width: 100%;
   overflow: hidden;
   display: inline-block;
+}
+
+/* .subscribe-bar .container .row
+{
+  display: flex;
+  align-items: center;
+} */
+
+.flex-vertical-center
+{
+  display: flex;
+  align-items: center;
 }
 
 /* Content Section */
@@ -841,6 +861,7 @@ article.post
   overflow: hidden;
   min-height: 335px;
   padding: 35px 30px 100px;
+  margin-bottom: 20px;
   border-radius: 20px;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.15);
 }
