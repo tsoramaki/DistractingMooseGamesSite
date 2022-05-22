@@ -689,7 +689,8 @@ input[type="text"]
 .title-banner
 {
   padding: 120px 0;
-  background: linear-gradient(180deg, #004a5c 0%, #111111 100%);
+  /*background: linear-gradient(180deg, #004a5c 0%, #111111 100%);*/
+  background: linear-gradient(180deg, #5c5c5c 0%, #111111 100%)
 }
 
 .title-banner .sub-Title
@@ -907,7 +908,7 @@ article.post
 {
   width: 100%;
   height: auto;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .text-card .overlay-image
@@ -966,7 +967,7 @@ article.post
 {
   width: 100%;
   height: auto;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .section-call-to-action .overlay-image
